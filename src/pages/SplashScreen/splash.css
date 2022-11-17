@@ -1,0 +1,21 @@
+.containerSplash {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+    
+}
+.logoSplash {
+    height: 360px;
+    width: 360px;
+    padding: 50px 10px;
+}
+.splash{
+    font-size: 65px;
+    font-weight: bold;
+    font-style: normal;
+    font-family: sans-serif;      
+}

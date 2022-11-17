@@ -1,0 +1,22 @@
+
+.containerBtn{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        margin-top: 15%;;
+}
+.notificationBtn{
+    padding: 50px;
+      margin: auto;
+        font-size: 88px;
+        font-weight: bold;
+        font-style: none;
+        font-family: sans-serif;
+        color: white;
+        background-color: #FFA000;
+        border-color: #FFA000;
+        border-radius: 10px;
+}
