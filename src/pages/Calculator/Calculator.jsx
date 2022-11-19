@@ -15,7 +15,7 @@ export default function Calculator() {
       toast("Please Fill All Fields");
     } else {
       axios
-        .post("https://calculatorbe-production.up.railway.app/", {
+        .post(`${URL}/calculate/${operation.toLowerCase()}`, {
           Number1: parseInt(number1),
           Number2: parseInt(number2),
         })
