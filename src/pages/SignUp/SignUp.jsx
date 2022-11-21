@@ -51,6 +51,7 @@ function SignUp() {
         );
 
         console.log("submit");
+        navigate("/calculator");
         const user = userCredential.user;
 
         updateProfile(auth.currentUser, {
@@ -61,8 +62,6 @@ function SignUp() {
         delete formDataCopy.password;
 
         await setDoc(doc(db, "users", user.uid), formDataCopy);
-
-        navigate("/home");
       } catch (error) {
         toast.error("Something went wrong with registration");
       }

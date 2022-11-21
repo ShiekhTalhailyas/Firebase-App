@@ -10,6 +10,7 @@ export default function Calculator() {
   const [number2, setNumber2] = useState("");
   const [operation, setOperation] = useState("Add");
   const [result, setResult] = useState("");
+
   const handleCalculate = () => {
     if (number1 === "" || number2 === "" || operation === "") {
       toast("Please Fill All Fields");
