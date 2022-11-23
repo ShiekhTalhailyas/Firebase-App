@@ -17,7 +17,7 @@ function SignUp() {
     email: "",
     password: "",
   });
-  const [doc, setDoc] = useState("");
+  // const [doc, setDoc] = useState("");
 
   const { name, email, password } = formData;
   const navigate = useNavigate();
@@ -52,16 +52,16 @@ function SignUp() {
 
         console.log("submit");
         navigate("/calculator");
-        const user = userCredential.user;
+        // const user = userCredential.user;
 
-        updateProfile(auth.currentUser, {
-          displayName: name,
-        });
+        // updateProfile(auth.currentUser, {
+        //   displayName: name,
+        // });
 
-        const formDataCopy = { ...formData };
-        delete formDataCopy.password;
+        // const formDataCopy = { ...formData };
+        // delete formDataCopy.password;
 
-        await setDoc(doc(db, "users", user.uid), formDataCopy);
+        // await setDoc(doc(db, "users", user.uid), formDataCopy);
       } catch (error) {
         toast.error("Something went wrong with registration");
       }
